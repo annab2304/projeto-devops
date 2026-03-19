@@ -7,3 +7,5 @@ def home():
     return "Minha app com Docker 🚀"
 
 app.run(host="0.0.0.0", port=5000)
+
+# alteração para PR
