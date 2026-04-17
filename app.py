@@ -6,6 +6,18 @@ app = Flask(__name__)
 def home():
     return "Minha app com Docker 🚀"
 
-app.run(host="0.0.0.0", port=5000)
+@app.route("/status")
+def status():
+    return "OK"
 
-# alteração para PR
+def soma(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mult(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
